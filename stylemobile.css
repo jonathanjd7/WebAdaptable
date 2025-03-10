@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1fecdb;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+/* Contenedor de la galería */
+.galeria {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espacio entre las imágenes */
+    font-weight: bold ;
+    flex-direction: column; /* Para apilar la imagen y el texto */
+    align-items: center; /* Centra la imagen y el texto */
+    text-align: center; /* Centra el texto */
+}
+
+.fotos img {
+    width: 100%;
+    max-width: auto; /* Las imágenes no excederán este tamaño */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .fotos img {
+        max-width: 200px; /* Imágenes más pequeñas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .fotos img {
+        max-width: auto; /* Imágenes aún más pequeñas en móviles */
+    }
+}
